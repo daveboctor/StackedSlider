@@ -15,14 +15,13 @@
     grid-area: 1/1;
     position: relative;
     top: 0;
-    left: 0;
-    transform: translateX(100%);
+    left: 100%;
     box-sizing: border-box;
 }
 
 /* The 'is-moving' class is assigned to the panel elements
     that are moving in and out of the visible area of the panel
-    container. See the function 'moveTo()'. */
+    container. See the function 'setPanelPosn()'. */
 .is-moving {
-    transition: transform 0.4s;
+    transition: left 0.4s;
 }

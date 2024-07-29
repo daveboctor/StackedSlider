@@ -20,9 +20,9 @@
     color: rgba(250,250,250);
 }
 
+/* CSS variables */
 .panel-container {
-    /* CSS properties */
-    --stackWidth: 32; /* Units in 'px' */
+    --stackWidth: 32; /* Units: 'px' */
     --panel-lr-padding: 1rem;
     /*--mediaQueryWidth: 768px;*/
 }
@@ -31,6 +31,14 @@
     padding: var(--panel-lr-padding);
 }
 
+/* Uncomment the following media query, along with
+    ucommenting the CSS variable '--mediaQueryWidth'
+    defined in the '.panel-container' CSS style rule,
+    to set up a stacked slider only when the viewport
+    width is less than the size of the media query.
+    Otherwise, the stacked slider is enabled for all
+    viewport widths.
+*/
 /* Medium devices (tablets, 768px and up) */
 /*
 @media (min-width: 768px) {
